@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration	PUBLIC "-//mybatis.org//DTD Config  3.0//EN"	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <setting name="lazyLoadingEnabled" value="false" />
+    </settings>
+
+<!--    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="oracle.jdbc.OracleDriver"/>
+                <property name="url"  value="jdbc:oracle:thin:@192.168.100.12:2014:ERADOTCOM"/>
+                <property name="username" value="APPS"/>
+                <property name="password" value="APPS11G"/>
+            </dataSource>
+        </environment>
+    </environments>-->
+
+   <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="oracle.jdbc.OracleDriver"/>
+                <property name="url"  value="jdbc:oracle:thin:@192.168.3.33:2016:devl"/>
+                <property name="username" value="APPS"/>
+                <property name="password" value="11GAPPS"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+<!--    <mappers>
+        <mapper resource="generatetoexcel/UtilMapper.xml"/>
+    </mappers>-->
+
+</configuration>
